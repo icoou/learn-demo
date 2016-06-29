@@ -1,0 +1,82 @@
+.learn-way {
+    /*增加下一页的距离*/
+    clear: left;
+    height: 600px;
+    padding-bottom: 40px;
+}
+
+.head-title {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    height: 25px;
+    clear: left;
+}
+
+.title-left {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: bold;
+}
+
+.title-right {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+}
+
+$border:1px solid #E4E4E4;
+.learn-card a {
+    width: 20%;
+    float: left;
+    text-align: center;
+    display: block;
+    height: 300px;
+    /*盒子模型*/
+    box-sizing: border-box;
+    border: $border;
+    border-right: 0;
+    &:hover {
+        border: 1px solid #35b558;
+    }
+    &:nth-child(5) {
+        /*添加最右边的边框*/
+        border-right: $border;
+    }
+    &:nth-child(10) {
+        /*添加最右边的边框*/
+        border-right: $border;
+    }
+    img {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 24px;
+    }
+    h2 {
+        font-size: 15px;
+        color: #333;
+        margin-bottom: 20px;
+        height: 18px;
+    }
+    p {
+        font-size: 12px;
+        color: #666;
+        line-height: 20px;
+        height: 20px;
+        width: 199px;
+    }
+    button {
+        width: 140px;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+        outline: 0;
+        color: #35b558;
+        font-size: 16px;
+        background: #f3fff6;
+        border: 1px solid #35b558;
+    }
+}

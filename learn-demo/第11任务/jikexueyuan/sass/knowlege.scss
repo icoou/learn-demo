@@ -1,0 +1,90 @@
+.system-card {
+    height: 481px;
+    border-right: 1px solid #E4E4E4;
+}
+
+.card-transform {
+    width: 166px;
+    height: 120px;
+    border: 1px solid #E4E4E4;
+    border-right: 0;
+    border-bottom: 0;
+    float: left;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    &:hover {
+        animation: rotate .6s ease forwards;
+    }
+}
+
+
+/*--------------------------知识体系图动画-----------------------*/
+
+@keyframes rotate {
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+@mixin front-back {
+    border-bottom: 1px solid #E4E4E4;
+    /*位置保持相同，以便进行动画切换*/
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+$color:#35b558;
+.front {
+    @include front-back;
+    padding: 15px 0;
+    /*进行动画转换*/
+    background: #fff;
+    transform: translateZ(1px);
+    img {
+        margin-bottom: 5px;
+        height: 40px;
+        width: 40px;
+    }
+    h2 {
+        margin-bottom: 5px;
+        font-size: 15px;
+        color: #333;
+    }
+    span {
+        font-size: 14px;
+        color: $color;
+    }
+}
+
+.back {
+    /*上下居中*/
+    @include front-back;
+    padding: 30px 0;
+    background-color: #f5f5f5;
+    transform: rotateY(0deg) rotateX(180deg) rotateZ(180deg);
+    strong {
+        display: block;
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+}
+
+.green-btn {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: inherit;
+    width: 140px;
+    height: 36px;
+    cursor: pointer;
+    background: $color;
+    border: 1px solid $color;
+}

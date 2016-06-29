@@ -1,0 +1,47 @@
+        * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .hea_der {
+        height: 100px;
+        background-color: #F97B66;
+    }
+    
+    .content {
+        height: 500px;
+    }
+    
+    h1 {
+        text-align: center;
+        line-height: 100px;
+        color: #F1EDE7;
+    }
+    
+    .left {
+        height: 100%;
+        width: 20%;
+        background-color: #00CD98;
+        float: left;
+        margin-left: -80%;
+    }
+    
+    .middle {
+        height: 100%;
+        width: 60%;
+        background-color: #FCC04F;
+        float: left;
+        margin-left: 20%;
+    }
+    
+    .right {
+        height: 100%;
+        width: 20%;
+        background-color: #05C3E2;
+        float: right;
+    }
+    
+    .foot_er {
+        height: 100px;
+        background-color: #0098CE;
+    }

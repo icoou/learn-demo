@@ -1,0 +1,12 @@
+body {
+    background: #F1AC31;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 0 0 15px #0E0B09;
+}

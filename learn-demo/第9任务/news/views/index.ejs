@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1>
+    <title>百度新闻</title>
+    <link rel="stylesheet" href="stylesheets/news.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div id="left">
+                <div class="barbtn"></div>
+                <div class="userbtn"></div>
+            </div>
+            <div id="right">
+                <div class="searchbtn"></div>
+                <div class="addbtn"></div>
+            </div>
+        </div>
+        <div class="title">
+            <table>
+                <tr>
+                    <td><a href="/">推荐</a></td>
+                    <td><a href="bai">百家</a></td>
+                    <td><a href="she">社会</a></td>
+                    <td><a href="back">后台</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="content">
+            <% for(var i=title.length-1; i>=0; i--) { %>  
+            <div class="news-item">
+                <div class="news-img">
+                    <img src="<%= title[i].newsimg %>">
+                </div>
+                <div class="news-text">
+                    <%= title[i].newstitle %>
+                </div>
+                <div class="news-date">
+                    <span><%= title[i].addtime %></span>
+                </div>
+            </div>
+            <% } %>   
+        </div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理</title>
+    <link rel="stylesheet" href="stylesheets/backcss.css">
+</head>
+
+<body>
+    <div>
+        <table>
+            <% for(var i=title.length-1; i>=0; i--) { %>  
+            <tr data-id = <%= title[i].newsid %>>
+                <td>
+                    <div class="ID">ID：<%= title[i].newsid %></div>
+                </td>
+                <td>
+                    <div class="Title">标题：<%= title[i].newstitle %></div>
+                </td>
+                <td>
+                    <div class="Content">内容：<%= title[i].newscontent %></div>
+                </td>
+                <td>
+                    <div class="Head"><%= title[i].headlines %></div>
+                </td>
+                <!-- <td class="creat">创建</td> -->
+                <td class="change" data=<%= title[i].newsid %>>修改</td>
+                <td class="dele" data=<%= title[i].newsid %>>删除</td>
+            </tr>
+            <% } %>   
+
+        </table>
+        <div class="form">
+            <label>标题：</label>
+            <input type="text" id="caption">
+            <br>
+            <label>内容：</label>
+            <textarea type="text" id="content"></textarea> 
+            <br>
+            <label for="">类别：</label>
+            <select>
+                <option>推荐</option>
+                <option>百家</option>
+                <option>社会</option>
+            </select>
+            <br>
+            <input type="submit" data="" value="创建" id="creat" class="submit">
+            <input type="submit" data="" value="修改" id="submit" class="submit">
+        </div>
+    </div>
+    <script src="javascripts/jquery-2.2.3.min.js"></script>
+    <script src="javascripts/back.js"></script>
+</body>
+

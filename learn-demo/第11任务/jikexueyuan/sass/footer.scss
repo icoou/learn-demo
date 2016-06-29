@@ -1,0 +1,72 @@
+$color:#E4E4E4;
+@mixin relative {
+    position: relative;
+    top: 30px;
+}
+
+.jikemore {
+    clear: left;
+    width: 994px;
+    height: 251px;
+    background: #fafafa;
+    border-top: 1px solid $color;
+    border-bottom: 1px solid $color;
+    margin-bottom: 30px;
+    @include relative;
+    dl {
+        width: 214px;
+        padding-left: 30px;
+        color: gray;
+        margin: 25px 0;
+        float: left;
+        border-left: 1px solid $color;
+        min-height: 175px;
+        dd {
+            font-size: 12px;
+            margin-top: 10px;
+            list-style-type: square;
+            span {
+                /*添加前面的列表符号*/
+                display: inline-block;
+                width: 3px;
+                height: 3px;
+                background: gray;
+                border-radius: 5px;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 20px;
+    @include relative;
+}
+
+@mixin gotop {
+    background-position: 0 0;
+    background-size: 34px 103px;
+}
+
+.gotop a {
+    display: block;
+    width: 34px;
+    height: 34px;
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 20%;
+    background: url(../img/icon/gotop_g.jpg) 0 0 no-repeat;
+    display: none;
+    @include gotop;
+    &:hover {
+        background: url(../img/icon/gotop.jpg) 0 0 no-repeat;
+        @include gotop;
+    }
+}

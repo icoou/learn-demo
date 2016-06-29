@@ -1,0 +1,305 @@
+html {
+    width: 100%;
+    min-width: 1200px;
+    font-size: 100%;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head {
+    color: #fff;
+    text-align: center;
+    background: url(../img/nav.png);
+    background-size: 100% 100%;
+}
+
+.head h1 {
+    font-size: 3em;
+    padding: 250px 0 80px;
+}
+
+.head p {
+    padding-bottom: 150px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    /*增加标题上下间的距离*/
+    margin: 0.5em 0;
+}
+
+p {
+    color: #B5B5B5;
+    font-size: 0.8em;
+    /*增加每行的间距*/
+    line-height: 1.5em;
+}
+
+.contaianer {
+    /*定义主体内容宽度*/
+    width: 676px;
+    margin: 0 auto;
+}
+
+
+/*------start 关于我------*/
+
+.about_me {
+    /*关于我的介绍分成两栏*/
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    line-height: 1.5em;
+    margin: 1em 0 5em;
+}
+
+.about_me p {
+    margin-right: 2em;
+}
+
+.agency {
+    /*图片*/
+    width: 760px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.back {
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 7%;
+    background: url(../img/back.svg) no-repeat;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    background: url(../img/left.png) no-repeat;
+    background-size: cover;
+    margin-top: -44%;
+    margin-left: -5%;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+    background: url(../img/right.png) no-repeat;
+    background-size: cover;
+    float: right;
+    margin-top: -33%;
+    margin-right: -4%;
+}
+
+
+/*------start 我做什么------*/
+
+.caption {
+    /*每个标题的上下距离*/
+    margin: 3em 0;
+    line-height: 3em;
+}
+
+.icon_one {
+    width: 90px;
+    height: 90px;
+    background: url(../img/icon.png);
+}
+
+.icon_two {
+    width: 90px;
+    height: 90px;
+    background: url(../img/icon.png) 450px;
+}
+
+.icon_three {
+    width: 90px;
+    height: 90px;
+    background: url(../img/icon.png) 90px;
+}
+
+.icon {
+    /*模板，品牌，梦想一排显示*/
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+}
+
+.brand {
+    /*增加品牌与模板和梦想的间距*/
+    margin: 0 1em;
+}
+
+.center {
+    /*将我的工作以下的标题内容居中*/
+    text-align: center;
+}
+
+
+/*------start 我的工作------*/
+
+.groups>div {
+    /*为每个模块设置宽高*/
+    width: 300px;
+    height: 300px;
+}
+
+.group {
+    /*为每个模块添加背景颜色*/
+    width: 100%;
+    height: 75%;
+    background: no-repeat #FC4549;
+}
+
+.Knigiws {
+    /*Knigiws位置靠右，文字居中*/
+    float: right;
+    text-align: center;
+}
+
+
+/*我的工作下的四个模块加入背景图片*/
+
+.knigiws_one {
+    background: url(../img/kni.svg) no-repeat;
+}
+
+.company {
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+
+.company_one {
+    background: url(../img/company.svg);
+}
+
+.story {
+    float: right;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+.story_one {
+    background: url(../img/story.svg) no-repeat;
+}
+
+.agen {
+    position: relative;
+    top: 300px;
+    text-align: center;
+}
+
+.agen_one {
+    background: url(../img/agen.svg) no-repeat;
+}
+
+.work_button {
+    position: relative;
+    top: 330px;
+}
+
+
+/*------start 摄影------*/
+
+.photo {
+    /*设置摄影以下的内容与上面的距离*/
+    margin-top: 380px;
+}
+
+.input,
+#send {
+    /*设置按钮的样式*/
+    border: none;
+    background: #FC464A;
+    color: #fff;
+    padding: 0.6em 2em;
+    width: 100px;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.photos {
+    /*设置每个图片的样式*/
+    width: 211px;
+    height: 211px;
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+
+/*为每个div加入背景图片*/
+
+.photos_one {
+    background: url(../img/photo.png) no-repeat;
+    background-size: cover;
+    margin-right: 0.5em;
+}
+
+.photos_two {
+    background: url(../img/photo.png) no-repeat center;
+    background-size: cover;
+    margin-right: 0.5em;
+}
+
+.photos_three {
+    background: url(../img/photo.png) no-repeat right;
+    background-size: cover;
+}
+
+.form input {
+    /*为按钮加样式*/
+    border: none;
+    background: #F9F9F9;
+    padding: 0.7em;
+    margin: 0.5em 0;
+    width: 150px;
+    outline: none;
+}
+
+
+/*---为四个input设置宽度和距离---*/
+
+#name {
+    margin-right: 5px;
+}
+
+#email {
+    margin-left: 5px;
+}
+
+#templ {
+    width: 330px;
+}
+
+#imessage {
+    width: 330px;
+    padding-bottom: 100px;
+}
+
+
+/*------start 底部------*/
+
+.foot {
+    /*设置底部样式*/
+    height: 100px;
+    margin-top: 1em;
+    background: #F9F9F9;
+}
+
+.foot p {
+    /*底部文字垂直居中*/
+    line-height: 100px;
+}

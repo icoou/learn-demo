@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>计算器</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/css.css">
+</head>
+
+<body>
+    <div class="button">
+        <h1>计算器</h1>
+        <!-- 解决结果闪现又可以使用回车输出结果 -->
+        <form action="#" onSubmit="return false">
+        <input type="text" class="frcation" id="x" value="6" required />
+        <select id="myNumber" class="frcation">
+            <option value="+">加</option>
+            <option value="-">减</option>
+            <option value="*">乘</option>
+            <option value="/">除</option>
+            <option value="%">余</option>
+        </select>
+        <input type="text" class="frcation" id="y" value="4" required/>
+        <input type="submit" class="search" value="结果" onclick="count();" />
+        </form>
+        <!-- 结果显示区 -->
+        <p id="amount"></p>
+    </div>
+    <script type="text/javascript" src="js/count.js"></script>
+</body>
+
+</html>

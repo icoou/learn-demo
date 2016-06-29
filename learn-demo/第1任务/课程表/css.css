@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 10%;
+    bottom: 20%;
+}
+
+caption {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0.4em 0.75em 0.4em 0.75em;
+}
+
+#head {
+    font-size: 1.3em;
+}
+
+th,
+td {
+    padding: 0.4em 0.75em 0.4em 0.75em;
+    border: 2px solid #e3e3e3;
+    text-align: center;
+}

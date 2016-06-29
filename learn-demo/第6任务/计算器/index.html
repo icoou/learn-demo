@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <link rel="stylesheet" href="stylesheet/css.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="top"></div>
+        <div id="main">
+            <!-- 显示屏 -->
+            <div id="entry" onclick="backDelete()"> <!-- 退格删除 -->
+                <p id="total">0</p>
+            </div>
+            <!-- end 显示屏 -->
+            <div id="option">
+                <table>
+                    <tr>
+                        <td id="clean" onclick="clean()">C</td>
+                        <td id="sin" onclick="operator(this.textContent)">sin</td>
+                        <td id="cos" onclick="operator(this.textContent)">cos</td>
+                        <td id="divide" onclick="operator(this.textContent)">&divide;</td>
+                    </tr>
+                    <tr>
+                        <td id="seven" onclick="theClick(this.textContent)">7</td>
+                        <td id="eight" onclick="theClick(this.textContent)">8</td>
+                        <td id="nine" onclick="theClick(this.textContent)">9</td>
+                        <td id="times" onclick="operator(this.textContent)">&times;</td>
+                    </tr>
+                    <tr>
+                        <td id="four" onclick="theClick(this.textContent)">4</td>
+                        <td id="five" onclick="theClick(this.textContent)">5</td>
+                        <td id="six" onclick="theClick(this.textContent)">6</td>
+                        <td id="subtract" onclick="operator(this.textContent)">-</td>
+                    </tr>
+                    <tr>
+                        <td id="one" onclick="theClick(this.textContent)">1</td>
+                        <td id="two" onclick="theClick(this.textContent)">2</td>
+                        <td id="tree" onclick="theClick(this.textContent)">3</td>
+                        <td id="add" onclick="operator(this.textContent)">+</td>
+                    </tr>
+                    <tr>
+                        <td id="zero" onclick="theClick(this.textContent)">0</td>
+                        <td id="radic" onclick="operator(this.textContent)">&radic;</td>
+                        <td id="point" onclick="theClick(this.textContent)">.</td>
+                        <td id="equal" onclick="getResult();">=</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/calculator.js"></script>
+</body>
+
+</html>

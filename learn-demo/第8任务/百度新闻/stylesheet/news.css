@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue",Arial,"Helvetica",sans-serif;
+}
+
+.wrap {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.header {
+    min-width: 320px;
+    width: 100%;
+    height: 44px;
+    position: relative;
+    background: url(../img/logo.png) no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+    background-color: #3e98f0;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+.barbtn,
+.userbtn,
+.searchbtn,
+.addbtn {
+    width: 34px;
+    height: 44px;
+    font-size: 15px;
+    line-height: 44px;
+    background: url(../img/icon.png) no-repeat;
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    display: inline-block;
+}
+
+.barbtn {
+    background-position: center 4px;
+}
+
+.userbtn {
+    margin-left: 10px;
+    background-position: center -463px;
+}
+
+.searchbtn {
+    margin-right: 10px;
+    background-position: center -162px;
+}
+
+.addbtn {
+    background-position: center -107px;
+}
+
+.header-bottom {
+    height: 1px;
+    margin: 0 10px;
+    background-color: #5dabf0;
+    position: absolute;
+}
+
+.title {
+    /*消除table与div上边的间距*/
+    background: #3e98f0;
+}
+
+table {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background: #3e98f0;
+    text-align: center;
+}
+
+td {
+    cursor: pointer;
+}
+
+.td-bottom {
+    /*标题底部白条*/
+    border-bottom: 1px solid #fff;
+}
+.content{
+
+}
+.news-item{
+	height: 90px;
+	padding: 10px;
+	position: relative;
+	border-bottom: 1px solid #f6f6f6;
+}
+.news-item div{
+	float: left;
+}
+.news-img{
+	width: 120px;
+	height: 90px;
+}
+.news-img img{
+	width: 100%;
+	height: 100%;
+}
+.news-text{
+	height: 60px;
+	position: absolute;
+	/*增加左边的距离*/
+	left: 140px;
+	right:10px;
+	font-size: 15px;
+}
+.news-date{
+	font-size: 12px;
+	color: gray;
+	position: absolute;
+	left: 140px;
+	bottom: 10px;
+}
+.loading,
+.wait {
+    width: 80px;
+    height: 80px;
+    background: url(../img/loading.png) no-repeat;
+    background-position: center 0;
+    background-size: cover;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*垂直居中*/
+    transform: translateX(-50%) translateY(-50%);
+    display: none;
+}
+
+.wait {
+    background-position: center -80px;
+    animation: wait 2s linear infinite;
+}
+
+
+/*载入等待动画*/
+
+@keyframes wait {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

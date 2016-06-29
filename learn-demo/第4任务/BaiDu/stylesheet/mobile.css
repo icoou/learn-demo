@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav,
+.footer {
+    display: none;
+}
+
+body {
+    min-width: 320px;
+    background: #EEEFF0;
+    font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+.wrapper {
+    height: 30px;
+    background: #eeeff0;
+}
+
+.img1 {
+    /*百度logo*/
+    width: 175px;
+    height: 55px;
+    margin: 10% auto 3%;
+}
+
+.content {
+    /*logo和搜索框*/
+    text-align: center;
+}
+
+.search {
+    margin: 0 5px;
+}
+
+.form_text {
+    /*搜索框*/
+    width: 75%;
+    height: 36px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    outline: none;
+    border: 1px solid #b8b8b8;
+    padding-left: 7px;
+    font-size: 15px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.form_submit {
+    /*搜索按钮*/
+    width: 24%;
+    height: 38px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    border: 0;
+    margin-left: -2%;
+    outline: none;
+    color: white;
+    background: #3385ff;
+    font-size: 15px;
+    float: left;
+}
+
+.navs {
+    clear: both;
+    margin: 17px 0 14px;
+    overflow: hidden;
+}
+
+.navs a {
+    float: left;
+    width: 16%;
+    font-size: 12px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    position: relative;
+    padding: 0 8px 10px;
+}
+
+.plus-card {
+    margin-top: 8px;
+    background: #fff;
+}
+
+.card-title {
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+
+.normal-title h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+
+.card-content a {
+    /*排列在一行*/
+    float: left;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 6px;
+    width: 25%;
+    height: 42px;
+    line-height: 42px;
+    color: #262626;
+    background: #fff;
+}
+
+.ww-card {
+    margin-top: 90px;
+    background: #fff;
+}
+
+.plus-control {
+    /*展示全部增加高度*/
+    height: 47px;
+    line-height: 47px;
+    font-size: 16px;
+    color: #262626;
+}
+
+hr {
+    border-color: #fff;
+}
+
+.last-card {
+    padding: 15px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/*--位置靠底部--*/
+
+.footers {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 4%;
+}
+
+.footers p {
+    margin-top: 10px;
+}
+
+.footers a:last-child {
+    text-decoration: none;
+}
+
+.footers a:last-child:hover {
+    text-decoration: underline;
+}
+
+.about a:link {
+    color: #999;
+}
+
+.about a:visited {
+    color: #999;
+}
+
+.about a:first-child {
+    margin-right: 10px;
+}

@@ -1,0 +1,29 @@
+//定义颜色变量
+$back-color:#E0E0E0;
+$stop-color:#1DA671;
+$font-color:#fff;
+$h3-color:#000;
+$icon-color:#EC2F57;
+$content-color:#35B558;
+//结束颜色变量
+@mixin font($h1, $h2, $h3, $li) {
+    //定义字体大小
+    .stop-name h1 {
+        font-size: $h1;
+        color: $h3-color;
+    }
+    .info-title {
+        h2 {
+            font-size: $h2;
+            color: $font-color;
+        }
+        h3 {
+            font-size: $h3;
+            color: $h3-color;
+        }
+    }
+    .content li {
+        font-size: $li;
+        color: $font-color;
+    }
+}

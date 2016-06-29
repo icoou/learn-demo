@@ -1,0 +1,114 @@
+html {
+    height: 100%;
+}
+
+.warp {
+    perspective: 1000px;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    margin: 15% auto;
+    transform-style: preserve-3d;
+}
+
+.box_grid {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(234, 200, 110, 0.57);
+    margin: 10px;
+    transform-origin: 50% 50%;
+}
+
+.grid {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    padding: 12px;
+    margin-top: 3px;
+}
+
+
+/*  start 魔方颜色 */
+
+.grid_one div {
+    background-color: #00A8A8;
+}
+
+.grid_two div {
+    background-color: #59B5C4;
+}
+
+.grid_three div {
+    background-color: #58BE8C;
+}
+
+.grid_four div {
+    background-color: #8CB704;
+}
+
+.grid_five div {
+    background-color: #21C0E8;
+}
+
+.grid_six div {
+    background-color: #F5CB5D;
+}
+
+
+/* end 魔方颜色 */
+
+
+/* start 3D效果 */
+
+.grid_one {
+    transform: translateZ(150px);
+}
+
+.grid_two {
+    transform: rotateY(90deg) translateZ(-150px);
+}
+
+.grid_three {
+    transform: rotateX(-90deg) translateZ(-150px);
+}
+
+.grid_four {
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.grid_five {
+    transform: rotateX(90deg) translateZ(-150px);
+}
+
+.grid_six {
+    transform: translateZ(-150px);
+}
+
+
+/* end 3D效果 */
+
+
+/* start 动画*/
+
+.box {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    20% {
+        transform: rotateX(180deg) rotateY(90deg);
+    }
+    50% {
+        transform: rotateZ(-180deg) rotateX(-90deg);
+    }
+    80% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+}
+
+
+/* end 动画 */

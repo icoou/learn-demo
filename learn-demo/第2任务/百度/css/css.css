@@ -1,0 +1,134 @@
+@charset "utf-8";
+body {
+    font-size: 100%;
+}
+
+/*  start 导航栏 */
+
+.nav,
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+.nav {
+    overflow: auto;
+    padding: 15px 0px 3px 0px;
+    font-weight: bold;
+}
+
+.nav li {
+    float: right;
+    margin: 0 0.75em;
+}
+
+.nav ul {
+    margin-left: -20px;
+    padding: 10px 10px 15px;
+}
+
+.nav li ul li a {
+    text-decoration: none;
+}
+
+.nav li ul {
+    left: -9999em;
+    /* 隐藏导航 */
+    position: absolute;
+    z-index: 1000;
+}
+
+.nav li:hover ul {
+    left: auto;
+    /* 移入导航 */
+    width: auto;
+}
+
+.nav ul li {
+    float: none;
+    font-size: 1em;
+    margin-top: .5em;
+    width: auto;
+    line-height: 1.7em;
+}
+
+.bri {
+    background-color: #3385ff;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a:link {
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+}
+
+a:active {
+    color: #333;
+}
+
+.bri:visited {
+    color: #fff;
+}
+
+/* end 导航栏 */
+
+.content {
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img1 {
+    width: 270px;
+    height: 129px;
+    margin: 0 0 1.5em 0;
+}
+
+.img2 {
+    width: 64px;
+    height: 27px;
+    margin: -8px 0px -9px -73px;
+}
+
+.cec1 {
+    width: 540px;
+    height: 36px;
+    font-size: 15px;
+    border: 1px solid #999;
+}
+
+.cec2 {
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    background: #3385ff;
+    border: 1px solid #3385ff;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    color: #999;
+    margin-top: 25%;
+}
+
+.about a {
+    margin: 0 2em;
+    color: #999;
+}
+
+.about1 a {
+    color: #999;
+}

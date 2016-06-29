@@ -1,0 +1,83 @@
+fieldset {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    margin: 12px auto;
+    padding: 0 10px;
+    width: 600px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.1em;
+    background-color: #0098CE;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 3px #ccc;
+    text-shadow: #9FBEB9 1px 1px 1px;
+    padding: 0.3em 1em;
+}
+
+ul {
+    background-color: #fff;
+    list-style: none;
+    border: 1px solid #eaeaea;
+    margin: 12px;
+    padding: 12px;
+}
+
+ul li {
+    margin: 0.5em 0;
+}
+
+label {
+    display: inline-block;
+    padding: 3px 6px;
+    width: 150px;
+    text-align: right;
+    vertical-align: top;
+}
+
+input,
+select {
+    font-size: 100%;
+}
+
+.medium {
+    width: 250px;
+}
+/* 辅导科目 */
+.container {
+    border-bottom: 3px solid #f1f1f1;
+}
+
+.check_box {
+    display: inline-block;
+    border: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.check_box label {
+    text-align: left;
+}
+/*  辅导科目 结束*/
+/*  提交 */
+.create_profile {
+    background-color: #00CD98;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.3em 1em;
+    width: 100px;
+}
+/* 提交结束 */

@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.top {
+    height: 61px;
+    width: 100%;
+    border-bottom: 1px solid #EAEAEA;
+    line-height: 61px;
+}
+
+.resurfacing {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    /*和左边的文字垂直对齐*/
+    margin-bottom: -4px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.powder {
+    background: #FF8686;
+}
+
+.green {
+    background: #1DA671;
+}
+
+.yellow {
+    background: #FFEA29;
+}
+
+.header {
+    text-align: center;
+    height: 120px;
+    line-height: 120px;
+}
+
+.bdlogo {
+    height: 38px;
+    /*和搜索框对齐*/
+    margin-bottom: -16px;
+    margin-right: 20px;
+}
+
+.search {
+    height: 40px;
+    width: 55%;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #B5B5B5;
+}
+
+.submit {
+    height: 42px;
+    width: 100px;
+    margin-left: -5px;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    background: #EDEDED;
+    border: 1px solid #B5B5B5;
+}
+
+.wrapper {
+    width: 100%;
+    text-align: center;
+    /*文字居中，取消标题与底部直接的空隙*/
+    border-collapse: collapse;
+}
+
+#head {
+    /*标题颜色*/
+    border-top: 2px solid #1DA671;
+}
+
+thead th {
+    border-left: 1px solid #EAEAEA;
+}
+
+#firstTd {
+    /*标题背景颜色*/
+    background: #1DA671;
+    padding: 10px;
+    color: #fff;
+}
+
+.left {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    line-height: 65px;
+    margin-top: 20px;
+}
+
+.left td {
+    width: 111px;
+}
+
+#right {
+    width: 69%;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    /*右边框颜色*/
+    border: 1px solid #1DA671;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.right td {
+    /*充满右边的空间*/
+    width: 111px;
+}
+
+td {
+    width: 100px;
+}
+
+th,
+td,
+.submit {
+    cursor: pointer;
+}
+
+.fontColor {
+    /*字体颜色*/
+    color: #000;
+}
+
+.powderColor {
+	/*一下三个为主题色*/
+    color: #FF8686;
+}
+
+.greenColor {
+    color: #1DA671;
+}
+
+.yellowColor {
+    color: #FFEA29;
+}

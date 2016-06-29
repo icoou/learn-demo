@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  start 正常盒子与怪异盒子对比 */
+
+.compare {
+    width: 800px;
+    height: 300px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 30px auto;
+}
+
+h2 {
+    line-height: 150px;
+    color: white;
+}
+
+.normal_shell,
+.strang_shell {
+    width: 150px;
+    height: 150px;
+    background-color: #FCC04F;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 50px;
+    border: 5px solid #F97B66;
+}
+
+.normal,
+.strang {
+    width: 150px;
+    height: 150px;
+    background-color: #00CD98;
+}
+
+.strang_shell {
+    width: 170px;
+    height: 170px;
+    box-sizing: border-box;
+}
+
+
+/*  end 正常盒子与怪异盒子对比 */
+
+
+/* start 弹性盒子 */
+
+#flexible {
+    width: 700px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.flex {
+    height: 100px;
+    display: -webkit-box;
+    list-style: none;
+}
+
+.flex li:nth-child(1) {
+    background-color: #F97B66;
+    -webkit-box-flex: 1;
+}
+
+.flex li:nth-child(2) {
+    background-color: #FCC04F;
+    -webkit-box-flex: 1;
+}
+
+.flex li:nth-child(3) {
+    background-color: #00CD98;
+    -webkit-box-flex: 1;
+}
+
+#horizontal {
+    -webkit-box-orient: horizontal;
+}
+
+#vertical {
+    -webkit-box-orient: vertical;
+}
+
+#flex {
+    -webkit-box-direction: reverse;
+}
+
+.cloumn {
+    border: 10px solid#F97B66;
+    -webkit-columns: 5;
+}
+
+p {
+    color: white;
+    padding: 5px 10px;
+    background: #F97B66;
+}
+
+
+/*  end 弹性盒子 */

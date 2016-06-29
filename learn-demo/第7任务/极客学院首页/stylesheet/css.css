@@ -1,0 +1,1154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.w-1000 {
+    /*页面宽度，内容居中*/
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 10px 0;
+    border-bottom: 2px solid #36B350;
+}
+
+.wrap {
+    position: relative;
+    height: 50px;
+}
+
+.jike-logo {
+    float: left;
+    width: 113px;
+    margin-top: 5px;
+}
+
+.search-section {
+    /*位置居中*/
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 380px;
+    height: 38px;
+    border: 1px solid #e4e4e4;
+    margin: 0 0 0 -190px;
+}
+
+.search-text {
+    width: 100%;
+    height: 36px;
+    padding-left: 15px;
+    border: 0;
+    line-height: 18px;
+    color: #333;
+    background: #fff;
+    font-size: 12px;
+    text-align: left;
+    outline: none;
+}
+
+.search-btn {
+    position: absolute;
+    /*居中靠右*/
+    top: -1px;
+    right: -1px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dfdfdf;
+    color: #6d6d6d;
+    background: url(../img/icon/topsearch-icon.png) center center no-repeat;
+    cursor: pointer;
+}
+
+.hot-words {
+    position: absolute;
+    top: 11px;
+    right: 48px;
+    font-size: 12px;
+}
+
+.hot-words a {
+    padding: 1px 3px;
+    margin-left: 5px;
+    color: gray;
+    background: #f3f3f3;
+}
+
+.loginBox {
+    float: right;
+    text-align: right;
+    line-height: 50px;
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+}
+
+.loginBox em {
+    font-style: normal;
+    padding: 0 5px;
+}
+
+
+/*end 顶部导航*/
+
+.navposition {
+    height: 42px;
+    border-bottom: 1px solid #e8e8e8;
+    -webkit-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    -moz-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+}
+
+.navbox {
+    position: relative;
+}
+
+.navleft {
+    width: 740px;
+}
+
+.navleft a:first-child {
+    width: auto;
+}
+
+.navleft a {
+    /*为添加宽度起作用*/
+    display: inline-block;
+    width: 120px;
+    font-size: 14px;
+    color: #333;
+    line-height: 42px;
+    text-align: center;
+}
+
+.nav-user {
+    position: absolute;
+    top: 0;
+    /*位置靠右垂直居中*/
+    right: 0;
+    line-height: 44px;
+    font-size: 12px;
+}
+
+.nav-user a {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-user a span {
+    float: left;
+}
+
+.nav-user a span img {
+    /*图片垂直居中*/
+    float: left;
+    margin-top: 14px;
+    margin-right: 5px;
+}
+
+.navpanel {
+    position: absolute;
+    top: 43px;
+    width: 100%;
+    background: rgba(255, 255, 255, .97);
+    border: 1px solid #e8e8e8;
+    border-top: 0;
+    padding-left: 50px;
+    -webkit-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    -moz-box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 5px;
+    display: none;
+    z-index: 1000;
+}
+
+.panel-item {
+    border-left: 1px solid #F7F7F7;
+    position: relative;
+    width: 120px;
+    margin-left: -1px;
+    border-right: 1px solid #F7F7F7;
+    float: left;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+    height: 100%;
+}
+
+.p-i-item li:hover {
+    color: #3CB45C;
+}
+
+.panel-item-arrow {
+    /*小箭头*/
+    background-image: url(../img/icon/nav-angle.png);
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    background-size: 100% 100%;
+    top: -7px;
+    left: 54px;
+}
+
+.liColor {
+    /*js控制背景颜色*/
+    background: #F7F7F7;
+}
+
+.p-i-item li {
+    line-height: 29px;
+    display: block;
+    text-align: left;
+    margin-right: 0;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+
+
+/*end 结束导航*/
+
+.page-one,
+.hot-lesson-title {
+    margin-top: 20px;
+}
+
+.lesson-left-nav {
+    position: relative;
+    width: 210px;
+    float: left;
+    border-top: 2px solid #35b558;
+    border-right: 0;
+    height: 373px;
+}
+
+.lesson-left-nav ul {
+    position: absolute;
+    z-index: 800;
+    width: 208px;
+    height: 371px;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lesson-left-nav ul li>div {
+    width: 178px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 15px;
+    font-size: 13px;
+    color: #333;
+    border-bottom: 1px solid #F5F5F5;
+    background: #fff url(../img/icon/more-icon.png) 186px center no-repeat;
+    background-size: 6px 10px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.lesson-left-nav ul li>div:hover {
+    padding: 0 17px;
+    color: #35b558;
+    border-left: 2px solid #35b558;
+}
+
+.lesson-list {
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    min-height: 373px;
+    min-width: 401px;
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    position: absolute;
+    left: 209px;
+    top: -2px;
+    z-index: 100;
+    border-left: 0;
+    padding-bottom: 30px;
+    display: none;
+}
+
+.lesson-list dl {
+    margin: 0 10px;
+}
+
+.lesson-list dt {
+    border-bottom: 1px solid #f5f5f5;
+    height: 37px;
+    line-height: 45px;
+}
+
+.lesson-list dd {
+    margin-left: -11px;
+}
+
+.lesson-list dd a {
+    height: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    padding: 0 7px;
+    color: #666;
+    display: inline-block;
+    font-size: 12px;
+    border-left: 1px solid #e0e0e0;
+}
+
+
+/*结束第一页左侧导航*/
+
+.lesson-center-nav {
+    width: 560px;
+    height: 373px;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+
+.swiper-container {
+    position: absolute;
+    /*每次只显示一张图片*/
+    height: 260px;
+    width: 560px;
+    overflow: hidden;
+}
+
+#banner-left {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    /*固定在图片页面*/
+    left: 0;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    z-index: 100;
+    background: url(../img/icon/banner-left.png) -10px -5px no-repeat;
+}
+
+#banner-right {
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 100;
+    cursor: pointer;
+    background: url(../img/icon/banner-right.png) -10px -5px no-repeat;
+}
+
+#banner-left,
+#banner-right {
+    display: none;
+}
+
+.swiper-wrapper {
+    /*承载轮播图片*/
+    width: 4480px;
+    height: 260px;
+    position: absolute;
+    left: 0;
+}
+
+.swiper-wrapper a {
+    width: 560px;
+    height: 260px;
+    display: inline-block;
+    float: left;
+}
+
+.swiper-wrapper a:first-child {
+    background: url(../img/banner/1.jpg)no-repeat;
+}
+
+.swiper-wrapper a:nth-child(2) {
+    background: url(../img/banner/2.jpg) no-repeat;
+}
+
+.swiper-wrapper a:nth-child(3) {
+    background: url(../img/banner/3.jpg) no-repeat;
+}
+
+.swiper-wrapper a:nth-child(4) {
+    background: url(../img/banner/4.jpg) no-repeat;
+}
+
+.swiper-wrapper a:nth-child(5) {
+    background: url(../img/banner/5.jpg) no-repeat;
+}
+
+.swiper-wrapper a:nth-child(6) {
+    background: url(../img/banner/6.jpg) no-repeat;
+}
+
+.swiper-wrapper a:nth-child(7) {
+    background: url(../img/banner/1.jpg) no-repeat;
+}
+
+.pagination {
+    /*标签切换固定在图片下边*/
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-pagination {
+    display: inline-block;
+    width: 39px;
+    height: 2px;
+    margin: 0 6px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.sp-color {
+    background: #35B558;
+}
+
+.swiper-work-container {
+    position: absolute;
+    bottom: 0;
+    margin-top: 13px;
+    width: 560px;
+    height: 100px;
+    border: 1px solid #E2E2E2;
+}
+
+#work-arrow-left {
+    display: inline-block;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 100;
+    background: url(../img/icon/focus-nav.png) 0 0 no-repeat;
+    background-size: 48px 80px;
+}
+
+#work-arrow-right {
+    display: inline-block;
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    z-index: 100;
+    background: url(../img/icon/focus-nav.png) -24px 0 no-repeat;
+    background-size: 48px 80px;
+}
+
+#work-arrow-left,
+#work-arrow-right {
+    display: none;
+}
+
+#s-work-list {
+    width: 560px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.s-work-list {
+    width: 2240px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+}
+
+.s-work-list li {
+    float: left;
+    width: 186.5px;
+    height: 100px;
+}
+
+.s-work-list li a img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 8px auto;
+}
+
+.s-work-list li a p {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+
+/*结束中间轮播*/
+
+.lesson-right-nav {
+    width: 208px;
+    float: left;
+    border: 1px solid #E4E4E4;
+    height: 373px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.news {
+    padding: 0 13px;
+    height: 209px;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+.news h3 {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.news ul li {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.recommend ul li {
+    float: left;
+    display: block;
+    color: #000;
+    width: 51px;
+    height: 76px;
+    font-size: 12px;
+    line-height: 23px;
+    text-align: center;
+    border-bottom: 1px solid #F5F5F5;
+    border-right: 1px solid #F5F5F5;
+}
+
+.recommend ul li span:first-child {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 13px auto 0;
+    background-size: 71px 232px;
+}
+
+.recommend ul li span:nth-child(3) {
+    /*绘制向下的小箭头*/
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid #E4E4E4;
+    box-sizing: content-box;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    margin: 0 auto;
+}
+
+.recommend-1-icon {
+    background: url(../img/icon/recommend.png);
+    background-position: -5px -3px;
+}
+
+.recommend-2-icon {
+    background: url(../img/icon/recommend.png);
+    background-position: -5px -31px;
+}
+
+.recommend-3-icon {
+    background: url(../img/icon/recommend.png);
+    background-position: -5px -59px;
+}
+
+.recommend-4-icon {
+    background: url(../img/icon/recommend.png);
+    background-position: -5px -87px;
+}
+
+.recommend-5-icon {
+    background: url(../img/icon/recommend.png);
+    background-position: -5px -117px;
+}
+
+.recommend-6-icon {
+    background: url(../img/icon/recommend.png);
+    background-position: -5px -144px;
+}
+
+.recommend-7-icon {
+    background: url(../img/icon/recommend.png);
+    background-position: -5px -173px;
+}
+
+.recommend-8-icon {
+    background: url(../img/icon/recommend.png);
+    background-position: -5px -202px;
+}
+
+
+/*结束第一页内容*/
+
+
+/*开始课程推荐*/
+
+.hot-lesson-title {
+    clear: both;
+    /*拉开距上边的距离*/
+    position: relative;
+    top: 20px;
+    margin-bottom: 20px;
+}
+
+.hot-lesson-title ul {
+    height: 40px;
+    background: url(../img/icon/hotnav.jpg) 0 100% repeat-x;
+}
+
+.hot-lesson-title ul li:first-child {
+    /*准备改变样式的元素*/
+    border-bottom: 2px solid #35b558;
+}
+
+.hot-lesson-title ul li {
+    width: 16.6%;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.hot-lessonbox {
+    /*使页面内容宽度100%*/
+    margin-top: 40px;
+}
+
+.one-lesson ul {
+    width: 1100px;
+}
+
+.one-lesson ul li {
+    margin-right: 20px;
+    background: 0 0;
+    margin-bottom: 20px;
+    height: 220px;
+    width: 235px;
+    float: left;
+}
+
+.lesson-box {
+    width: 235px;
+    height: 130px;
+    position: relative;
+}
+
+.two-view-lesson {
+    display: none;
+}
+
+.lesson-box i {
+    /*收藏图标*/
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/icon/shoucang.png);
+    background-size: 16px 16px;
+    z-index: 101;
+    cursor: pointer;
+    display: none;
+}
+
+.lesson-box a img {
+    /*背景图片设置*/
+    width: 100%;
+    height: 130px;
+}
+
+.lessonplay {
+    /*对播放图标进行相对定位*/
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.lessonplay i {
+    /*播放图标*/
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+    background: url(../img/icon/player_icon.png) 0 0 no-repeat;
+    cursor: pointer;
+    background-size: 50px 50px;
+}
+
+.lesson-info {
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+    z-index: 100;
+    position: absolute;
+    width: 213px;
+    background: #fff;
+}
+
+.lesson-info h2 {
+    font-size: 14px;
+    color: #333;
+    line-height: 18px;
+    margin-bottom: 12px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.lesson-info p {
+    /*这里的高度需要动态调节*/
+    height: 52px;
+    color: gray;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.time-icon {
+    background: url(../img/icon/clok.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px;
+}
+
+.lesson-info span {
+    color: gray;
+    float: left;
+    font-size: 12px;
+}
+
+
+/*开始职业路径*/
+
+.learn-way {
+    /*增加下一页的距离*/
+    clear: left;
+    height: 600px;
+    padding-bottom: 40px;
+}
+
+.head-title {
+    margin-top: 20px;
+    margin-bottom: 16px;
+    height: 25px;
+    clear: left;
+}
+
+.title-left {
+    font-size: 18px;
+    color: #333;
+    float: left;
+    font-weight: bold;
+}
+
+.title-right {
+    font-size: 12px;
+    color: #2d85ca;
+    float: right;
+    margin-top: 4px;
+}
+
+
+/*开始职业路径*/
+
+.learn-card a {
+    width: 20%;
+    float: left;
+    text-align: center;
+    display: block;
+    height: 300px;
+    /*盒子模型*/
+    box-sizing: border-box;
+    border: 1px solid #E4E4E4;
+    border-right: 0;
+}
+
+.learn-card a:hover {
+    border: 1px solid #35b558;
+}
+
+.learn-card a:nth-child(5),
+.learn-card a:nth-child(10) {
+    /*添加最右边的边框*/
+    border-right: 1px solid #E4E4E4;
+}
+
+.learn-card img {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 24px;
+}
+
+.learn-card h2 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+    height: 18px;
+}
+
+.learn-card p {
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+    height: 20px;
+    width: 199px;
+}
+
+.learn-card button {
+    width: 140px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: 0;
+    color: #35b558;
+    font-size: 16px;
+    background: #f3fff6;
+    border: 1px solid #35b558;
+}
+
+
+/*开始知识体系图*/
+
+.system-card {
+    height: 481px;
+    border-right: 1px solid #E4E4E4;
+}
+
+.card-transform {
+    width: 166px;
+    height: 120px;
+    border: 1px solid #E4E4E4;
+    border-right: 0;
+    border-bottom: 0;
+    float: left;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center;
+}
+
+
+/*--------------------------老师看这里，知识体系图动画-----------------------*/
+
+.card-transform:hover {
+    animation: rotate .6s ease forwards;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+.front {
+    padding: 15px 0;
+    /*进行动画转换*/
+    background: #fff;
+    transform: translateZ(1px);
+}
+
+.front,
+.back {
+    border-bottom: 1px solid #E4E4E4;
+    /*位置保持相同，以便进行动画切换*/
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.front img {
+    margin-bottom: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.front h2 {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #333;
+}
+
+.front span {
+    font-size: 14px;
+    color: #35b558;
+}
+
+.back {
+    /*上下居中*/
+    padding: 30px 0;
+    background-color: #f5f5f5;
+    transform: rotateY(0deg) rotateX(180deg) rotateZ(180deg);
+}
+
+.back strong {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.green-btn {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    width: 140px;
+    height: 36px;
+    cursor: pointer;
+    background: #35b558;
+    border: 1px solid #35b558;
+}
+
+
+/*开始精品课程*/
+
+.excellent-box-card {
+    width: 1010px;
+}
+
+.excellent-card {
+    position: relative;
+    width: 205px;
+    height: 261px;
+    padding: 16px;
+    margin-right: 10px;
+    border: 1px solid #e4e4e4;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.excellent-card:hover {
+    border: 1px solid #35b558;
+}
+
+.excellent-card h2 {
+    white-space: nowrap;
+    width: 80%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.excellent-card img {
+    margin-bottom: 15px;
+}
+
+.other {
+    line-height: 18px;
+    color: gray;
+}
+
+.s-c {
+    float: right;
+    color: #fff;
+    width: 56px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 3px;
+    font-size: 12px;
+    background: #35b558;
+}
+
+
+/*开始wiki*/
+
+.one-wiki {
+    float: left;
+    width: 299.3px;
+    height: 335px;
+    padding: 15px;
+    border: 1px solid #e4e4e4;
+}
+
+.one-wiki h2 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.wiki-imgbox {
+    position: relative;
+    width: 142px;
+    height: 200px;
+    background: #999;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.wiki-img dl dd:nth-child(1) {
+    margin-right: 15px;
+}
+
+.wiki-img dl dd {
+    text-align: center;
+    width: 142px;
+    float: left;
+}
+
+.wiki-img dl dd img {
+    width: 142px;
+    height: 200px;
+    border-radius: 5px;
+    z-index: 100;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+}
+
+.wiki-imgbox img:hover {
+    transform: rotateY(20deg);
+    transform-origin: left;
+}
+
+.wiki-img dl dd h3 {
+    font-size: 13px;
+    color: #333;
+    height: 13px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 13px;
+    margin: 10px auto;
+}
+
+.wiki-img dl dd span {
+    font-size: 12px;
+    color: #999;
+    display: block;
+}
+
+.w-u-p {
+    /*位置靠下*/
+    position: relative;
+    bottom: -15px;
+}
+
+.w-u-p li {
+    height: 0; //防止它对图片滑过的干扰
+}
+
+.w-u-p li p {
+    font-size: 12px;
+    color: #999;
+    line-height: 12px;
+    margin-bottom: 8px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/*开始底部*/
+
+.jikemore {
+    clear: left;
+    width: 994px;
+    height: 251px;
+    background: #fafafa;
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #e4e4e4;
+    position: relative;
+    top: 30px;
+    margin-bottom: 30px;
+}
+
+.jikemore dl {
+    width: 214px;
+    padding-left: 30px;
+    color: gray;
+    margin: 25px 0;
+    float: left;
+    border-left: 1px solid #E4E4E4;
+    min-height: 175px;
+}
+
+.jikemore dl dd {
+    font-size: 12px;
+    margin-top: 10px;
+    list-style-type: square;
+}
+
+.jikemore dl dd span {
+    /*添加前面的列表符号*/
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background: gray;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #999;
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 20px;
+}
+
+.gotop a {
+    display: block;
+    width: 34px;
+    height: 34px;
+    position: fixed;
+    left: 50%;
+    margin-left: 510px;
+    bottom: 20%;
+    background: url(../img/icon/gotop_g.jpg) 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 34px 103px;
+    -webkit-background-size: 34px 103px;
+    display: none;
+}
+
+.gotop a:hover {
+    background: url(../img/icon/gotop.jpg) 0 0 no-repeat;
+    background-position: 0 0;
+    background-size: 34px 103px;
+    -webkit-background-size: 34px 103px;
+}

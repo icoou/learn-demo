@@ -1,0 +1,72 @@
+body {
+    background-color: #F1EDE7;
+}
+
+
+/* 最外层 div*/
+
+.container {
+    width: 306px;
+    height: 306px;
+    box-shadow: none;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 20%;
+    right: 20%;
+}
+
+
+/*  5个div 样式*/
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 5px #ccc;
+}
+
+
+/*  绿，黄，蓝 放在一行*/
+
+.square2,
+.square3,
+.square4 {
+    display: inline-block;
+    float: left;
+}
+
+
+/*红色居中*/
+
+.square1 {
+    margin: 0 auto;
+    background-color: #F97B66;
+}
+
+.square2 {
+    background-color: #00CD98;
+}
+
+
+/*icon 居中垂直*/
+
+.square3 {
+    line-height: 100px;
+    text-align: center;
+    background-color: #FCC04F;
+}
+
+.square4 {
+    background-color: #05C3E2;
+}
+
+
+/*蓝色居中*/
+
+.square5 {
+    margin: 0 auto;
+    background-color: #0098CE;
+    overflow: hidden;
+}

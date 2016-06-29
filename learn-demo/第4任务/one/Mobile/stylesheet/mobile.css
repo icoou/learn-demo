@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+html {
+    max-width: 736px;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    
+}
+
+.head {
+    /*页头图片居中自适应*/
+    text-align: center;
+    padding: 5em;
+    color: #fff;
+    background: url(../img/nav.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.head h1 {
+    /*标题与下边文字的距离*/
+    margin: 2em 0 1em;
+}
+
+.head p {
+    /*每行文字的间距*/
+    line-height: 1.5em;
+    margin: em 0;
+}
+
+.container {
+    /*增加主体内容周围的距离*/
+    margin: 2em;
+}
+
+p {
+    color: #B5B5B5;
+    font-size: 1em;
+    /*增加每行的间距*/
+    line-height: 1.5em;
+    margin: 0.2em 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.about_me {
+    margin: 1em 0;
+}
+
+.about_me p {
+    margin: 1em 0;
+}
+
+
+/*------start 关于我的图片------*/
+
+.agency {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin: 1em auto;
+}
+
+.back {
+    height: 250px;
+    width: 100%;
+    background: url(../img/back.svg) no-repeat;
+}
+
+.left {
+    height: 100%;
+    width: 90%;
+    background: url(../img/left.png) no-repeat;
+    background-size: cover;
+    margin-top: -66%;
+    margin-left: -23%;
+}
+
+.right {
+    height: 100%;
+    width: 78%;
+    background: url(../img/right.png) no-repeat;
+    background-size: cover;
+    float: right;
+    margin-top: -104%;
+}
+
+
+/*------end 关于我的图片------*/
+
+.caption {
+    /*每个标题的上下距离*/
+    margin: 2em 0;
+    line-height: 2em;
+}
+
+
+/*------start 三个icon-----*/
+
+.icons {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1em;
+}
+
+.icon_one {
+    background: url(../img/icon.png);
+    background-size: cover;
+}
+
+.icon_two {
+    background: url(../img/icon.png) 448px;
+    background-size: cover;
+}
+
+.icon_three {
+    background: url(../img/icon.png) 50px;
+    background-size: cover;
+}
+
+.template,
+.brand,
+.dream {
+    display: inline-block;
+}
+
+@media screen and (min-width: 550px) {
+    .icon {
+        display: -webkit-flex;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    }
+}
+
+
+/*------end icon------*/
+
+.center,
+.work {
+    /*将我的工作以下的标题内容居中*/
+    text-align: center;
+}
+
+.groups p {
+    margin: 0.5em 0 2em;
+}
+
+.group {
+    /*为每个模块添加背景颜色*/
+    width: 200px;
+    height: 160px;
+    background: #FC4549;
+    margin: 0 auto;
+}
+
+.Knigiws,
+.company,
+.story,
+.agen {
+    display: inline-block;
+    width: 230px;
+}
+
+
+/*我的工作下的四个模块加入背景图片*/
+
+.knigiws_one {
+    background: url(../img/kni.svg) no-repeat;
+}
+
+.company_one {
+    background: url(../img/company.svg) no-repeat;
+}
+
+.story_one {
+    background: url(../img/story.svg) no-repeat;
+}
+
+.agen_one {
+    background: url(../img/agen.svg) no-repeat;
+}
+
+.input,
+#send {
+    /*设置按钮的样式*/
+    border: none;
+    border-radius: 0;
+    -webkit-appearance:none;
+    background: #FC464A;
+    color: #fff;
+    padding: 0.6em 2em;
+    width: 100px;
+}
+
+
+/*------摄影------*/
+
+
+/*为每个div加入背景图片*/
+
+#photo {
+    margin-bottom: 2em;
+}
+
+.photos {
+    /*设置每个图片的样式*/
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 0.2em auto;
+}
+
+.photos_one {
+    background: url(../img/photo.png) no-repeat;
+    background-size: cover;
+}
+
+.photos_two {
+    background: url(../img/photo.png) no-repeat center;
+    background-size: cover;
+}
+
+.photos_three {
+    background: url(../img/photo.png) no-repeat right;
+    background-size: cover;
+}
+
+
+/*------你好------*/
+
+.form input {
+    /*为按钮加样式*/
+    display: block;
+    border: none;
+    background: #F9F9F9;
+    padding: 0.7em;
+    margin: 0.5em auto;
+    width: 200px;
+    outline: none;
+}
+
+#imessage {
+    padding-bottom: 100px;
+}
+
+
+/*------底部------*/
+
+.foot {
+    /*设置底部样式*/
+    height: 50px;
+    background: #F9F9F9;
+}
+
+.foot p {
+    /*底部文字垂直居中*/
+    font-size: 0.5em;
+    line-height: 50px;
+    margin: 0;
+}

@@ -1,0 +1,137 @@
+.hot-lesson-title {
+    clear: both;
+    /*拉开距上边的距离*/
+    position: relative;
+    top: 20px;
+    margin-bottom: 20px;
+    ul {
+        height: 40px;
+        background: url(../img/icon/hotnav.jpg) 0 100% repeat-x;
+        li {
+            width: 16.6%;
+            float: left;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            padding: 10px 0;
+            cursor: pointer;
+            &:first-child {
+                /*准备改变样式的元素*/
+                border-bottom: 2px solid #35b558;
+            }
+        }
+    }
+}
+
+.hot-lessonbox {
+    /*使页面内容宽度100%*/
+    margin-top: 40px;
+}
+
+.one-lesson ul {
+    width: 1100px;
+    li {
+        margin-right: 20px;
+        background: 0 0;
+        margin-bottom: 20px;
+        height: 220px;
+        width: 235px;
+        float: left;
+    }
+}
+
+.two-view-lesson {
+    display: none;
+}
+
+.lesson-box {
+    width: 235px;
+    height: 130px;
+    position: relative;
+    i {
+        /*收藏图标*/
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 16px;
+        height: 16px;
+        background: url(../img/icon/shoucang.png);
+        background-size: 16px 16px;
+        z-index: 101;
+        cursor: pointer;
+        display: none;
+    }
+    a img {
+        /*背景图片设置*/
+        width: 100%;
+        height: 130px;
+    }
+}
+
+.lessonplay {
+    /*对播放图标进行相对定位*/
+    background: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    i {
+        /*播放图标*/
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        display: block;
+        left: 50%;
+        margin-left: -25px;
+        top: 50%;
+        margin-top: -25px;
+        background: url(../img/icon/player_icon.png) 0 0 no-repeat;
+        cursor: pointer;
+        background-size: 50px 50px;
+    }
+}
+
+.lesson-info {
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+    z-index: 100;
+    position: absolute;
+    width: 213px;
+    background: #fff;
+    h2 {
+        font-size: 14px;
+        color: #333;
+        line-height: 18px;
+        margin-bottom: 12px;
+        height: 36px;
+        overflow: hidden;
+    }
+    p {
+        /*这里的高度需要动态调节*/
+        height: 52px;
+        color: gray;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        display: none;
+    }
+    span {
+        color: gray;
+        float: left;
+        font-size: 12px;
+    }
+}
+
+.time-icon {
+    background: url(../img/icon/clok.png) 0 0 no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin-right: 8px;
+    background-size: 14px 14px;
+}
